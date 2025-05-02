@@ -2,7 +2,6 @@ FROM golang:alpine AS builder
 
 WORKDIR /build
 ADD go.mod .
-ADD go.sum .
 RUN go build -o app ./main.go
 
 FROM alpine
