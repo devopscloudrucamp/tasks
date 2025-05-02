@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echo Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+        .info p {
+            margin: 8px 0;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Echo Server</h1>
+<div class="info">
+    <p><span class="label">Hostname:</span> {{.Hostname}}</p>
+    <p><span class="label">IP Address:</span> {{.IP}}</p>
+    <p><span class="label">Author:</span> {{.Author}}</p>
+</div>
+</body>
+</html>
